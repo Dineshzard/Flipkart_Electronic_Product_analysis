@@ -1,67 +1,86 @@
-# 📊 Flipkart Electronics Price & Discount Analysis Dashboard
+# 📦 Flipkart Electronics Product Analysis
 
-This Power BI dashboard project showcases an in-depth analysis of electronic products listed on Flipkart. The dashboard focuses on product pricing, discount trends, and rating distribution across different categories such as **smartphones**, **laptops**, and **cameras**.
+This project performs end-to-end analysis of electronics sold on [Flipkart](https://www.flipkart.com/) using **Python**, **Power BI**, and **MySQL**.
 
-![Flipkart Power BI Dashboard](./powerbi_dashboard.png)
-
----
-
-## 🚀 Project Objective
-
-The goal of this project is to:
-
-- Analyze the price distribution of top electronic products.
-- Identify brands offering the highest discounts.
-- Understand the relationship between ratings, prices, and discounts.
-- Help consumers and analysts identify value-for-money deals.
+We scraped real product data from Flipkart, cleaned and transformed it with Python, and built an interactive **Power BI dashboard** to uncover pricing trends, top brands, and discount patterns.
 
 ---
 
-## 📁 Dataset Information
-
-The dataset was scraped from [Flipkart](https://www.flipkart.com) and includes:
-
-- **Product Name**
-- **Brand**
-- **Category** (Laptops, Smartphones, Cameras)
-- **Price**
-- **Discount%**
-- **Rating**
-- **Image URL**
+![Banner](flipkart-logo-39906.png)
 
 ---
 
-## 📊 Key Features of the Dashboard
+## 📊 Dashboard Snapshot
 
-- **Total Products:** Displays the total number of products analyzed.
-- **Average Price & Discount%:** Cards showing overall trends.
-- **Brand-wise Price Analysis:** Average pricing trends by brand.
-- **Top Discounted Products:** Products with the highest discounts.
-- **Category Comparison:** Visuals showing pricing and discount spread across product categories.
-- **Interactive Filters:** Filter by brand, category, and price range.
+Explore the Power BI Dashboard 🎯  
 
----
+[🔗 Download Dashboard (.pbix)](./Flipkart_Electronic_Analysis.pbix)
 
-## 🛠️ Tools & Technologies
-
-- 🐍 Python (for web scraping & cleaning & formatting)
-- 📄 Sql
-- 📊 Power BI (for visualization & dashboard)
+![Power BI Overview](powerbi_dashboard.png)
 
 ---
 
-## 📈 Insights & Outcomes
+## 🔍 Objective
 
-- **Laptops** had the highest average prices, while **smartphones** showed the most discounts.
-- **SONY** and **NIKON** are top-priced brands in the camera category.
-- Several mid-range products offer excellent ratings and decent discounts, providing great value for buyers.
+- Scrape real product listings from Flipkart's electronics section
+- Analyze price ranges, ratings, and brand performance
+- Store clean data into **MySQL**
+- Visualize insights using **Power BI**
 
 ---
 
-## 🔗 Connect with Me
+## 🛠 Tools Used
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/zarddinesh)
-- 📂 [Portfolio Projects](https://github.com/zarddinesh)
+| Tool         | Purpose                     |
+|--------------|-----------------------------|
+| Python       | Web scraping & cleaning     |
+| Selenium     | Dynamic page scraping       |
+| BeautifulSoup| HTML parsing                |
+| Pandas       | Data transformation         |
+| MySQL        | Data storage                |
+| Power BI     | Dashboard & visualization   |
 
+---
 
+## 📁 Files Included
+
+| File                          | Description                                |
+|-------------------------------|--------------------------------------------|
+| `New_flipkart.ipynb`          | Web scraping + cleaning notebook           |
+| `flipkart_products.xls`       | Raw scraped data                           |
+| `flipkart_cleaned_data.xls`   | Cleaned, transformed dataset               |
+| `Flipkart_Electronic_Analysis.pbix` | Power BI dashboard file          |
+| `powerbi_dashboard.png`       | Power BI dashboard screenshot              |
+| `powerbi_transform.png`       | Power BI data transformation preview       |
+| `sql.sql`                     | SQL table creation script                  |
+
+---
+
+## ⚙️ Workflow Overview
+
+1. **Web Scraping**: Collected data from Flipkart using Selenium + BeautifulSoup  
+2. **Data Cleaning**: Removed noise, extracted brand names, formatted prices & ratings  
+3. **Data Storage**: Loaded clean data into a MySQL table  
+4. **Visualization**: Power BI used for Cards, Slicers, filters, charts, and trend analysis
+
+---
+
+## 🧠 Key Insights from Dashboard
+
+- 📈 **Top Brands** by average rating and price
+- 💰 **Price distribution** across categories
+- ⭐ **Product ratings** and discount patterns
+- 🔍 **Filters** to explore by brand, price, and category
+
+📄 Full report also available as [PDF](./Flipkart_Electronic_Analysis.pdf)
+
+---
+
+## 📷 Additional Visuals
+
+| SQL Workflow | Data Transform |
+|--------------|----------------|
+| ![SQL](sql.png) | ![Transform](powerbi_transform.png) |
+
+---
 
